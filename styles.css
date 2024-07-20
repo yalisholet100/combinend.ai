@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons button, .oauth-buttons button, .ai-section button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+}
+
+.nav-buttons button:hover, .oauth-buttons button:hover, .ai-section button:hover {
+    background-color: #e0e0e0;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.google {
+    background: red;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.apple {
+    background: black;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.microsoft {
+    background: #0078d7;
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 100% 50%, 100% 100%, 50% 100%, 50% 50%, 0 50%);
+}
+
+.discord {
+    background: #7289da;
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.ai-section {
+    margin-top: 20px;
+}
+
+.ai-section input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ai-section p {
+    margin-top: 10px;
+    font-size: 16px;
+}
